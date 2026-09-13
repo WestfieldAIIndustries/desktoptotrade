@@ -9,3 +9,6 @@ preview.html
 
 # Agent/dev tooling state
 .freebuff/
+
+# Local one-click deploy helper (contains no secrets, but no need to publish it)
+deploy.command
