@@ -1,0 +1,11 @@
+# Generated preview (build with scripts/build_preview.py)
+preview.html
+
+# macOS
+.DS_Store
+
+# Logs / temp
+*.log
+
+# Agent/dev tooling state
+.freebuff/
