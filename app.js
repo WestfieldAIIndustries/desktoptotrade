@@ -30,6 +30,17 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
   });
 });
 
+// Reveal on scroll — small, respectful animation
+const revealEls = document.querySelectorAll(".reveal");
+if (revealEls.length) {
+  if ("IntersectionObserver" in window) {
+    const io = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+    }, { threshold: 0.18 });
+    revealEls.forEach((el) => io.observe(el));
+  } else revealEls.forEach((el) => el.classList.add("in"));
+}
+
 // Waitlist form (front-end only for now — wire to a backend later)
 const form = document.getElementById("signup-form");
 const msg = document.getElementById("form-msg");
