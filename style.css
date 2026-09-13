@@ -200,6 +200,22 @@ img { max-width: 100%; display: block; }
 
 .card p { color: var(--ink-soft); font-size: 0.97rem; }
 
+.card-feature { position: relative; overflow: hidden; }
+
+.feature-art {
+  width: 100%; height: 120px;
+  display: grid; place-items: center;
+  background:
+    radial-gradient(220px 140px at 50% 0%, rgba(47,127,242,0.16), transparent 70%),
+    linear-gradient(180deg, #eef2f8, #f7f9fc);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  margin-bottom: 1.1rem;
+  padding: 10px;
+}
+
+.feature-art svg { width: 92px; height: 92px; filter: drop-shadow(0 8px 18px rgba(11,31,58,0.14)); }
+
 .card-icon {
   width: 42px; height: 42px;
   display: grid; place-items: center;
